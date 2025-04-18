@@ -6,7 +6,7 @@ export default {
 		"./pages/**/*.{ts,tsx}",
 		"./components/**/*.{ts,tsx}",
 		"./app/**/*.{ts,tsx}",
-		"./src/**/*.{ts,tsx}",
+		"./src/**/*.{ts,tsx}"
 	],
 	prefix: "",
 	theme: {
@@ -52,15 +52,15 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
+				anime: {
+					red: '#FF3333',
+					pink: '#FF66CC', 
+					purple: '#9966FF',
+					blue: '#3399FF',
+					lightBlue: '#66CCFF',
+					green: '#33CC99',
+                    yellow: '#FFCC33',
+                    darkBlue: '#1A1A3A'
 				}
 			},
 			borderRadius: {
@@ -84,11 +84,34 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+				'electricity': {
+					'0%, 100%': { 
+						opacity: '1',
+						transform: 'scale(1)' 
+					},
+					'50%': { 
+						opacity: '0.7',
+						transform: 'scale(1.05)' 
+					}
+				},
+                'pulse-glow': {
+                    '0%, 100%': {
+                        boxShadow: '0 0 15px 5px rgba(255, 0, 0, 0.7)'
+                    },
+                    '33%': {
+                        boxShadow: '0 0 20px 5px rgba(255, 102, 204, 0.7)'
+                    },
+                    '66%': {
+                        boxShadow: '0 0 25px 5px rgba(153, 102, 255, 0.7)'
+                    }
+                }
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'electricity': 'electricity 2s ease-in-out infinite',
+                'pulse-glow': 'pulse-glow 3s infinite linear'
 			}
 		}
 	},
