@@ -1,7 +1,7 @@
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
-import { Phone, Mail, MapPin, Send, Clock } from "lucide-react";
+import { Phone, MapPin, Send, Clock } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -66,19 +66,6 @@ const ContactSection = () => {
                     className="text-xl hover:text-anime-green transition-colors duration-300"
                   >
                     8 950 030 88 30
-                  </a>
-                </div>
-              </div>
-              
-              <div className="flex items-start">
-                <Mail className="w-5 h-5 text-anime-pink mt-1 mr-3 animate-electricity" />
-                <div>
-                  <h4 className="text-lg font-medium text-anime-lightBlue">Электронная почта</h4>
-                  <a 
-                    href="mailto:electrik@kolpino.ru" 
-                    className="hover:text-anime-pink transition-colors duration-300"
-                  >
-                    electrik@kolpino.ru
                   </a>
                 </div>
               </div>

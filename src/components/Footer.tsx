@@ -1,4 +1,4 @@
-import { Phone, Mail, ExternalLink } from "lucide-react";
+import { Phone, ExternalLink } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -19,16 +19,10 @@ const Footer = () => {
             <p className="text-gray-400 mb-4">
               Профессиональные электромонтажные работы в Колпино и окрестностях.
             </p>
-            <div className="flex items-center mb-2">
+            <div className="flex items-center">
               <Phone className="w-4 h-4 text-anime-green mr-2" />
               <a href="tel:+79500308830" className="hover:text-anime-green transition-colors duration-300">
                 8 950 030 88 30
-              </a>
-            </div>
-            <div className="flex items-center">
-              <Mail className="w-4 h-4 text-anime-pink mr-2" />
-              <a href="mailto:electrik@kolpino.ru" className="hover:text-anime-pink transition-colors duration-300">
-                electrik@kolpino.ru
               </a>
             </div>
           </div>
